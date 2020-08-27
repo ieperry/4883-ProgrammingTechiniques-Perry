@@ -1,4 +1,3 @@
-# 4883-ProgrammingTechiniques-Perry
 ## Isha Perry
 #### Repo: 4883 Programming Techniques
 #### Email: isha.e.perry@gmail.com
