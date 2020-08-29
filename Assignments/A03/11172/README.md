@@ -12,7 +12,7 @@ is appropriate for the given two numbers.
 |   #   | File                       | Description                              |
 | :---: | -------------------------- | ---------------------------------------- |
 |   1   | [main.cpp](./main.cpp)     | Main file containing solution            |
-|   2   | [input]                    | Sample input for the main file           |
+|   2   | [input](./input.cpp)       | Sample input for the main file           |
 
 
 ### Instructions
