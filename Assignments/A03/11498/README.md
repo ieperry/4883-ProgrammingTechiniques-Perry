@@ -15,8 +15,9 @@ lie in the second quadrant (prints ‘NO’), lies in the third quandrant (print
 
 |   #   | File                       | Description                              |
 | :---: | -------------------------- | ---------------------------------------- |
-|   1   | [main.cpp](main.cpp)     | Main file containing solution            |
-|   2   | [input](.input.cpp)       | Sample input for the main file           |
+|   1   | [main.cpp](./main.cpp)     | Main file containing solution            |
+|   2   | [input1](./input1.cpp)     | Given input from problem                 |
+|   3   | [input2](./input2.cpp)     | Sample input                             |
 
 
 ### Instructions
