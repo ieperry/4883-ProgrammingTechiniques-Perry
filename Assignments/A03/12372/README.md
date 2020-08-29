@@ -14,7 +14,7 @@ otherwise it will be ‘Case #: bad’. The output # will be replaced by the cas
 |   #   | File                       | Description                              |
 | :---: | -------------------------- | ---------------------------------------- |
 |   1   | [main.cpp](main.cpp)       | Main file containing solution            |
-|   2   | [input](./input)           | Given input from problem                 |
+|   2   | [input](./input)           | Sample input for the main file           |
 
 
 ### Instructions
