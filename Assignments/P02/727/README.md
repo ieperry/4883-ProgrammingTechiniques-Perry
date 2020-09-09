@@ -2,9 +2,15 @@
 ### Isha Perry
 ### Description:
 
-Reads strings of parentheses (), brackets [], or empty string then determines if the parentheses and brackets are "balanced".
-They are "balanced" if the string is empty or if every opening parentheses and opening bracket has a matching end. If they 
-are "balanced", the program will print Yes. If not, the program will print No.
+The infix expression to be converted is in the input file in the format of one character per line. 
+The input starts with an integer on a line by itself indicating the number of test cases. Several 
+infix expressions follows, preceded by a blank line. The program will only be designed to handle 
+the binary operators +, -, x, /. The operands will be one digit numerals. The operators * and / have 
+the highest priority. The operators + and - have the lowest priority. Operators at the same precedence 
+level associate from left to right. Parentheses act as grouping symbols that over-ride the operator 
+priorities. Each testcase will be an expression with valid syntax. The output file will have each 
+postfix expression all on one line. Print a blank line between different expressions.
+
 
 ### Files
 
