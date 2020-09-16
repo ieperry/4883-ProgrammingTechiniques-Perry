@@ -22,7 +22,8 @@ the N distinct non-negative numbers, each one separated by a space.
 For each input set, you should print the message "Case n:", where n is the sequential test case number, followed 
 by 3 lines with the pre-order, in-order, post-order transversal for the current tree formatted according to the given example.
 
-### Note: None space must be printed after the last number of each line and the program should print a blank 
+### Note: 
+None space must be printed after the last number of each line and the program should print a blank 
 line after each test case, even after the last test case.
 
 #### Input Sample	
