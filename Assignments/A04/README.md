@@ -1,5 +1,5 @@
 ### Basic Binary Tree
-- Ordinary BST with an insert, print, and helper funcion to create nodes
+- Ordinary BST with an insert, print, and helper funcion
 - Dynamically allocates memory
 - Uses recursive functions
 
