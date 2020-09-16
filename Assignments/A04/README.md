@@ -3,7 +3,7 @@
 - Dynamically allocates memory
 - Uses recursive functions
 
-***
+```
 #include<stdio.h> 
 #include<stdlib.h> 
 #include<iostream>
@@ -63,6 +63,6 @@ int main()
    
     return 0; 
 } 
-***
+```
 
-### Source: https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+#### Source: https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
