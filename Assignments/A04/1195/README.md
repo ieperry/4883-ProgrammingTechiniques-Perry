@@ -1,4 +1,6 @@
 ## Binary Search Tree - 1195
+### Source:
+- https://www.urionlinejudge.com.br/judge/en/problems/view/1195
 
 - In computer science, a binary search tree (BST), which may sometimes also be called an ordered or sorted binary tree, 
   is a node-based binary tree data structure which has the following properties:
