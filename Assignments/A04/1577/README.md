@@ -1,4 +1,6 @@
 ## 1577 - Falling Leaves
+### Source:
+- http://poj.org/problem?id=1577
 
 ### A binary tree of letters may be one of two things:
 1. It may be empty.
