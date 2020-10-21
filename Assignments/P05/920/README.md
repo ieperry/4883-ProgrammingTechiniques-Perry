@@ -16,7 +16,7 @@ represents the length in meters of the sunny mountain sides for the correspondin
 |   #   | File                       | Description                              |
 | :---: | -------------------------- | ---------------------------------------- |
 |   1   | [main.cpp](./main.cpp)     | Main file containing solution            |
-|   2   | [input1](./input)          | Input given                              |
+|   2   | [input](./input)           | Input given                              |
 
 
 ### Instructions
