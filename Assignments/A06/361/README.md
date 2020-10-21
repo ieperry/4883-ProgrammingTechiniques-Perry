@@ -6,3 +6,4 @@
 be calculated 3 times with the point taking the position of each point
 - If all three areas add up to the original area, then the point exists in the traingle
 - Otherwise, as the problem states, it is neither
+- Tip found at: https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/
