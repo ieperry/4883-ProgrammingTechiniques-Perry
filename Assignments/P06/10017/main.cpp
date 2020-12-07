@@ -1,62 +1,122 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int n, m;
-int pegs[3][252];
-int top[3];
-
-void Print() 
+//https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/
+void Towers (int n, int &times, char beg, char mid, char dest, vector <int> &a, vector <int> &b, vector <int> &c)
 {
-  for (int i = 0; i < 3; i++)
-  {
-    cout << char('A' + i) << "=>";
-    if (top[i] >= 0) 
-    {
-      cout << "  ";
-      for (int j = 0; j <= top[i]; j++)
-        cout << " " << pegs[i][j];
-    }
-    cout << endl;
-  }
-  cout << endl;
-}
-
-void Towers(int a, int b, int c, int n) 
-{
-  if (n > 0) 
-  {
-    Towers(a, c, b, n-1);
-
-    pegs[c][++top[c]] = pegs[a][top[a]--];
-
-    if (m-- > 0) 
-      Print();
-    else 
+  //cout << times << endl;
+  //if (times >= 0)
+  //{
+    //beg = 65, mid = 66, dest = 67
+    if (times < 0)
       return;
-        
-    Towers(b, a, c, n-1);
-  }
+    else if (times > 0)
+    {
+      if (n == 1)
+      {
+        //cout << "Disk " << n << " goes from " << beg << " to " << dest << endl;
+        if (dest == 65)
+          a.push_back(n);
+        else if (dest == 66)
+          b.push_back(n);
+        else if (dest == 67)
+          c.push_back(n);
+
+        if (beg == 65)
+          a.pop_back();
+        else if (beg == 66)
+          b.pop_back();
+        else if (beg == 67)
+          c.pop_back();
+
+        times--;
+        //cout << times << endl;
+
+        cout << "A=>   ";
+        for (int i = 0; i < a.size(); i++)
+          cout << a[i] << " ";
+        cout << endl;
+        cout << "B=>   ";
+        for (int i = 0; i < b.size(); i++)
+          cout << b[i] << " ";
+        cout << endl;
+        cout << "C=>   ";
+        for (int i = 0; i < c.size(); i++)
+          cout << c[i] << " ";
+        cout << endl << endl;
+
+        return;
+      }
+      else 
+      {
+        Towers(n-1, times, beg, dest, mid, a, b, c);
+        //cout << "Disk " << n << " goes from " << beg << " to " << dest << endl;	
+
+        if (times > 0)
+        {
+          if (dest == 65)
+            a.push_back(n);
+          else if (dest == 66)
+            b.push_back(n);
+          else if (dest == 67)
+            c.push_back(n);
+
+          if (beg == 65)
+            a.pop_back();
+          else if (beg == 66)
+            b.pop_back();
+          else if (beg == 67)
+            c.pop_back();
+          
+
+          times--;
+          //cout << times << endl;
+
+          cout << "A=>   ";
+          for (int i = 0; i < a.size(); i++)
+            cout << a[i] << " ";
+          cout << endl;
+          cout << "B=>   ";
+          for (int i = 0; i < b.size(); i++)
+            cout << b[i] << " ";
+          cout << endl;
+          cout << "C=>   ";
+          for (int i = 0; i < c.size(); i++)
+            cout << c[i] << " ";
+          cout << endl << endl;
+        }
+
+        Towers(n-1, times, mid, beg, dest, a, b, c);
+      }
+    }
 }
 
 int main() 
 {
-  int times = 1;
+  int num = 1;
+  int m, n;
+  vector <int> a, b, c;
 
-  cin >> n >> m;
-  while (n != 0 && m != 0) 
+  cin >> m >> n;
+  while (m != 0 && n != 0)
   {
-    cout << "Problem #" << times << endl << endl;
+    for (int i = m; i >= 1; i--)
+      a.push_back(i);
 
-    for (int i = n; i >= 1; i--) 
-      pegs[0][n-i] = i;
+    cout << "Problem #" << num << endl << endl;
 
-    top[0] = n - 1;
-    top[1] = top[2] = -1;
+    cout << "A=>   ";
+    for (int i = 0; i < a.size(); i++)
+      cout << a[i] << " ";
+    cout << endl << "B=>   " << endl << "C=>   " << endl << endl;
 
-    Print();
-    Towers(0, 1, 2, n);
+    Towers (m, n, 'A', 'B', 'C', a, b, c);
 
-    times++;
-    cin >> n >> m;
+    num++;
+    cin >> m >> n;
+    a.clear();
+    b.clear();
+    c.clear();
   }
 }
