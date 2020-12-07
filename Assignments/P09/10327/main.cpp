@@ -4,7 +4,7 @@ using namespace std;
 int Sort(int arr[], int len)
 {
   int swaps = 0;
-  for(int i = 0; i < len-1; i++)
+  for(int i = 0; i < len; i++)
   {
     for(int j = i+1; j < len; j++)
     {
