@@ -2,7 +2,6 @@
 #include <vector>
 using namespace std;
 
-//https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/
 void Towers (int n, int &times, char beg, char mid, char dest, vector <int> &a, vector <int> &b, vector <int> &c)
 {
   //cout << times << endl;
