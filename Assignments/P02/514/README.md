@@ -17,7 +17,8 @@ to the last “null” block of the input file
 |   #   | File                       | Description                              |
 | :---: | -------------------------- | ---------------------------------------- |
 |   1   | [main.cpp](./main.cpp)     | Main file containing solution            |
-|   2   | [input](./input)           | Input given                              |
+|   2   | [input1](./input1)         | Input that works                         |
+|   3   | [input2](./input2)         | Input given that gives error             |
 
 
 ### Instructions
