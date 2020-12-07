@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-//https://github.com/truongduy134/uva-online-judge-solutions/blob/master/Volume_103/UVA10327.c
 
 int Sort(int arr[], int len)
 {
